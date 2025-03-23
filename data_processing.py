@@ -89,7 +89,7 @@ class DataTransformer:
 # === Pipeline Execution ===
 
 if __name__ == "__main__":
-    file_path = "C:\\Users\\sarve\\Downloads\\BiztelAI_DS_Assignment_Mar'25\\BiztelAI_DS_Dataset_Mar'25.json"  # Update with actual file path
+    file_path = "BiztelAI_DS_Dataset_Mar'25.json"  # Update with actual file path
 
     # Load Data
     loader = DataLoader(file_path)
