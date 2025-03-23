@@ -85,7 +85,7 @@ logging.basicConfig(level=logging.INFO)
 executor = ThreadPoolExecutor()
 
 # Load and process dataset
-file_path = "C:\\Users\\sarve\\Downloads\\BiztelAI_DS_Assignment_Mar'25\\BiztelAI_DS_Dataset_Mar'25.json"  # Replace with actual file path
+file_path = "BiztelAI_DS_Dataset_Mar'25.json"  # Replace with actual file path
 loader = DataLoader(file_path)
 df = loader.load_data()
 df = DataCleaner.clean_data(df)
