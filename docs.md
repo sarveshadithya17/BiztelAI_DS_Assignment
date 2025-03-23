@@ -41,4 +41,4 @@ Developed using **Flask** / **FastAPI**:
 ---
 
 ## 📌 Author
-Developed by **[Your Name]** 🚀
+Developed by **Sarvesh Adithya J.** 🚀
