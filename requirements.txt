@@ -6,4 +6,4 @@ numpy
 nltk
 matplotlib
 seaborn
-echo "gunicorn"
+gunicorn
