@@ -28,13 +28,14 @@ uvicorn app:app --reload
 ---
 
 ## 📌 API Endpoints
+I used "render.com" here to deploy my chat-analysis app. 
 
 ### ✅ `GET /summary`
 Returns dataset overview.
 
 **Example:**
 ```bash
-curl http://127.0.0.1:5000/summary
+curl https://chat-analysis-22lf.onrender.com/summary
 ```
 
 ---
@@ -44,7 +45,7 @@ Transforms raw input into a preprocessed form.
 
 **Example:**
 ```bash
-Invoke-WebRequest -Uri "http://127.0.0.1:5000/transform" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"text": "Hello, this is a sample message!"}' -UseBasicParsing
+Invoke-WebRequest -Uri "https://chat-analysis-22lf.onrender.com/transform" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"text": "Hello, this is a sample message!"}' -UseBasicParsing
 ```
 
 ---
@@ -57,7 +58,7 @@ Analyzes a chat transcript and returns:
 
 **Example:**
 ```bash
-Invoke-WebRequest -Uri "http://127.0.0.1:5000/analyze" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"conversation_id": "t_d004c097-424d-45d4-8f91-833d85c2da31"}' -UseBasicParsing
+Invoke-WebRequest -Uri "https://chat-analysis-22lf.onrender.com/analyze" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"conversation_id": "t_d004c097-424d-45d4-8f91-833d85c2da31"}' -UseBasicParsing
 ```
 
 ---
