@@ -44,7 +44,7 @@ Transforms raw input into a preprocessed form.
 
 **Example:**
 ```bash
-curl -X POST http://127.0.0.1:5000/transform -H "Content-Type: application/json" -d '{"text": "Hello, this is a test!"}'
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/transform" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"text": "Hello, this is a sample message!"}' -UseBasicParsing
 ```
 
 ---
@@ -57,7 +57,7 @@ Analyzes a chat transcript and returns:
 
 **Example:**
 ```bash
-curl -X POST http://127.0.0.1:5000/analyze -H "Content-Type: application/json" -d '{"conversation_id": "t_d004c097-424d-45d4-8f91-833d85c2da31"}'
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/analyze" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"conversation_id": "t_d004c097-424d-45d4-8f91-833d85c2da31"}' -UseBasicParsing
 ```
 
 ---
@@ -70,4 +70,4 @@ jupyter notebook EDA.ipynb
 ---
 
 ## 📌 Author
-Developed by **[Your Name]** 🚀
+Developed by **Sarvesh Adithya J** 🚀
