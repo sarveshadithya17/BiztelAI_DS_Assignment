@@ -70,4 +70,4 @@ jupyter notebook EDA.ipynb
 ---
 
 ## 📌 Author
-Developed by **Sarvesh Adithya J** 🚀
+Developed by **Sarvesh Adithya J.** 🚀
