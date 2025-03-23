@@ -84,6 +84,10 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 executor = ThreadPoolExecutor()
 
+@app.route("/")
+def home():
+    return "API is running successfully!"
+
 # Load and process dataset
 file_path = "BiztelAI_DS_Dataset_Mar'25.json"  # Replace with actual file path
 loader = DataLoader(file_path)
@@ -125,4 +129,4 @@ async def analyze_chat():
     return jsonify(summary)
 
 if __name__ == "__main__":
-    app.run(debug=True, threaded=True)
+    app.run(host="0.0.0.0", port=5000)
