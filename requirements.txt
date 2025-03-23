@@ -1,0 +1,8 @@
+flask
+fastapi
+uvicorn
+pandas
+numpy
+nltk
+matplotlib
+seaborn
